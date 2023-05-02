@@ -3,12 +3,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 500px;
 }
 
 .quote{
     background-color: crimson;
-    height: 200px;
+    /* height: 200px; */
     font-size: 30px;
     width: 600px;
     border-radius: 15px;
@@ -17,6 +16,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .quote h4{
@@ -35,11 +35,12 @@
     border: none;
     height: 35px;
     width: 155px;
+    position: absolute;
+    top: 500px;
 }
 .bookmark-icon{
     position: absolute;
-    margin-left: 400px;
-    margin-top: 80px;
+    margin-left: 100px;
     color: white;
     height: 25px;
     width: 25px;

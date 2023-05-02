@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './Home.css'
+import Dropdown from './Dropdown';
+
 import { FaBookmark } from "react-icons/fa";
 
 const Home = () => {
@@ -30,13 +32,14 @@ const Home = () => {
     }
 
   return (
-    <div className='container' sm={12} md={6} lg={4} xl={3}>
+    <div className='container'>
         <div className='quote'>
             <h4>{quote}</h4>
             <br/>
-            <p>{author}</p>
-            <FaBookmark className='bookmark-icon'/>
+            <p>{author} <FaBookmark className='bookmark-icon'/></p>
+            
         </div>
+        <Dropdown/>
         <br/>
         <button className='quote-btn' onClick={fetchNewQuote}>Next Quote</button>
     </div>
