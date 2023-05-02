@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.quote{
+    background-color: crimson;
+    height: 200px;
+    font-size: 30px;
+    width: 600px;
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote h4{
+    font-size: 20px;
+    color: white;
+}
+
+.quote p{
+    font-size: 15px;
+    color: white;
+}
+
+.quote-btn{
+    border-radius: 50px;
+    background-color: rgb(113, 243, 113);
+    border: none;
+    height: 35px;
+    width: 155px;
+}
+.bookmark-icon{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 80px;
+    color: white;
+    height: 25px;
+    width: 25px;
+}
