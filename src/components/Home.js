@@ -9,6 +9,10 @@ const Home = () => {
     const [quote, setQuote] = useState("")
     const [author, setAuthor] = useState("")
 
+    const getData = (data)=>{
+        console.log("dropdown data", data);
+    }
+
     useEffect(()=>{
         fetch("https://api.quotable.io/random")
         .then(res => res.json())
@@ -39,7 +43,7 @@ const Home = () => {
             <p>{author} <FaBookmark className='bookmark-icon'/></p>
             
         </div>
-        <Dropdown/>
+        <Dropdown onData={getData}/>
         <br/>
         <button className='quote-btn' onClick={fetchNewQuote}>Next Quote</button>
     </div>

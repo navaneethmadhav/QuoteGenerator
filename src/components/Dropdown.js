@@ -3,7 +3,7 @@ import React,{useState, useEffect} from 'react'
 import './Dropdown.css'
 import { Table } from 'react-bootstrap'
 
-function Dropdown() {
+function Dropdown(props) {
 
     const [tags, setTags] = useState([])
     const [singleTag, setSingleTag] = useState([])
@@ -19,6 +19,7 @@ function Dropdown() {
         axios.get('https://api.quotable.io/random')
         .then(response => setSingleTag(response.data))
         .then(error => console.log(error))
+        props.onData(singleTag)
     }
 
   return (
